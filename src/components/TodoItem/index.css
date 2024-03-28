@@ -1,0 +1,21 @@
+/* Write your CSS here */
+.list-item-styling {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.para {
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 600;
+}
+.button {
+  padding: 10px;
+  background-color: transparent;
+  border: 2px solid #ff0b37;
+  color: #ff0b37;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
