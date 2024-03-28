@@ -2,12 +2,17 @@
 import './index.css'
 
 const TodoItem = props => {
-  const {todoItem} = props
-  const {title} = todoItem
+  const {todoItem, deleteTodos} = props
+  const {title, id} = todoItem
+
+  const buttonClicked = () => {
+    deleteTodos(id)
+  }
+
   return (
     <li className="list-item-styling">
       <p className="para">{title}</p>
-      <button type="button" className="button">
+      <button type="button" className="button" onClick={buttonClicked}>
         Delete
       </button>
     </li>
